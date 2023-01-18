@@ -38,6 +38,13 @@ class App extends Component {
     });
   };
 
+  deleteTask = (e) => {
+    const copy = this.state.tasks;
+    copy.splice(e.target.id, 1);
+    this.setState({tasks: copy})
+    
+  }
+
   render() {
 
     const { task, tasks} = this.state;
@@ -49,7 +56,7 @@ class App extends Component {
           <input type="text" id="taskInput" onChange={this.handleChange} value={task.text}/>
           <button type="submit">Add Task</button>
         </form>
-        <Overview tasks={tasks}/>
+        <Overview tasks={tasks} deleteTask={this.deleteTask}/>
       </div>
     );
   }
