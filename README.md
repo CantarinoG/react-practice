@@ -4,7 +4,7 @@
 
 A small project in React.js that manages a todo-list using state.
 
-During the development of my first React project, I struggled with state and props concepts, so instead I made this little project first with some help so I could get a better grasp of how this things work.
+During the development of my first React project, I struggled with state and props concepts, so instead I made this little project first with some help so I could get a better grasp of how thise things work.
 
 <br>
 </details>
